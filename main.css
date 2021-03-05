@@ -1,0 +1,153 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.container {
+    position: relative;
+    width: 1440px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-title{
+    position: absolute;
+    top: 5vh;
+    left: 10vh;
+}
+
+.card {
+    transform-style: preserve-3d;
+    position: relative;
+    min-height: 500px;
+    width: 350px;
+    border-radius: 30px;
+    padding: 2rem 2rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.sneaker {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sneaker img {
+    width: 13rem;
+    z-index: 2;
+    transition: all 0.5s ease-out;
+}
+
+.circle {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: linear-gradient(to right,
+            rgba(245, 70, 66, 0.75),
+            rgba(8, 83, 156, 0.75));
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.info {
+    margin-top: 10%;
+}
+
+.title{
+    font-size: 35px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.info h3 {
+    font-size: 20px;
+    padding: 10px 0;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.3s ease;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.sizes button {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 5px 20px;
+    color: #585858;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    transition: all  0.5s ease;
+    background: #fff;
+}
+
+.sizes button:hover {
+    background: #585858;
+    color: white;
+
+}
+
+button.active {
+    background: #585858;
+    color: white;
+}
+
+.purchase {
+    margin-top: 15px;
+}
+
+.purchase button {
+    width: 100%;
+    padding: 5px 10px;
+    background: #f54642;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.purchase button:hover{
+    background: #8f1614;
+}
+.level-1{
+    transform: translateZ(100px);
+}
+.level-2{
+    transform: translateZ(70px);
+}
+.level-3{
+    transform: translateZ(50px);
+}
+.level{
+    transform: translateZ(30px);
+}
+.level-4{
+    transform: translateZ(80px) rotateZ(-35deg);
+}
+
