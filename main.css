@@ -27,11 +27,12 @@ button {
     align-items: center;
     justify-content: center;
 }
-.main-title{
+.titles{
     position: absolute;
     top: 5vh;
-    left: 10vh;
+    left: 5vh; 
 }
+
 
 .card {
     transform-style: preserve-3d;
@@ -71,7 +72,10 @@ button {
 .info {
     margin-top: 10%;
 }
-
+.sub-title{
+    color:#585858;
+    font-size: 25px;
+}
 .title{
     font-size: 35px;
     font-weight: 600;
